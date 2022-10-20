@@ -27,7 +27,7 @@ const LINKS = [
 const Header = () => {
   return (
     <div className="border-b border-gray-100">
-      <header className="py-6 max-w-7xl flex items-center justify-center mx-auto">
+      <header className="p-6 max-w-7xl flex items-center justify-center mx-auto">
         <div className="flex w-full justify-between items-center">
           <div className="uppercase text-[#0F172A] text-xl font-semibold">
             <Link href={HOME}>
