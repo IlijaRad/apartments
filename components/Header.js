@@ -28,7 +28,7 @@ const Header = () => {
     <div className="border-b border-gray-100">
       <header className="mx-auto flex max-w-7xl items-center justify-center p-6">
         <div className="flex w-full items-center justify-between">
-          <div className="text-xl font-semibold uppercase text-[#0F172A]">
+          <div className="text-base font-semibold uppercase text-[#0F172A] md:text-xl">
             <a href={HOME}>Greenleafstudioapartments</a>
           </div>
           <nav>
