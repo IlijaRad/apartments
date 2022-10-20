@@ -12,9 +12,9 @@ const IMAGES = [
 
 const HomeSection = () => {
   return (
-    <div id="home" className="overflow-hidden pt-16 md:pt-[110px]">
+    <div id="home" className="overflow-hidden pt-12 md:pt-[110px]">
       <div className="px-6 lg:px-12">
-        <h1 className="mx-auto max-w-5xl text-center text-4xl font-semibold tracking-tight text-gray-900 md:text-5xl lg:text-7xl">
+        <h1 className="mx-auto max-w-5xl text-center text-3xl font-semibold tracking-tight text-gray-900 md:text-5xl lg:text-7xl">
           Located at the perfect place for a perfect vacation
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-center text-base text-gray-600 lg:text-lg">
@@ -26,7 +26,7 @@ const HomeSection = () => {
       </div>
       <a
         href={CONTACT}
-        className="mx-auto mt-10 block w-fit rounded-lg border border-gray-200 py-2.5 px-7 text-base font-semibold tracking-tight text-gray-700 lg:text-lg"
+        className="mx-auto mt-6 block w-fit rounded-lg border border-gray-200 py-2.5 px-6 text-sm font-semibold tracking-tight text-gray-700 md:px-7 md:text-base lg:mt-10 lg:text-lg"
       >
         Make a reservation now
       </a>

@@ -28,7 +28,7 @@ const Header = () => {
     <div className="border-b border-gray-100">
       <header className="mx-auto flex max-w-7xl items-center justify-center p-6">
         <div className="flex w-full items-center justify-between gap-x-6">
-          <div className="text-sm font-semibold uppercase tracking-wide text-slate-900 lg:text-xl lg:tracking-wider">
+          <div className="text-xs font-semibold uppercase text-slate-900 md:text-base md:tracking-wide lg:text-xl lg:tracking-wider">
             <a href={HOME}>Greenleafstudioapartments</a>
           </div>
           <nav className="hidden md:block">

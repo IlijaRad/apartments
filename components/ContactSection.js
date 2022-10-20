@@ -1,6 +1,6 @@
 const ContactSection = () => {
   return (
-    <div id="contact" className="px-6 pt-16 lg:px-12 lg:pt-[166px] ">
+    <div id="contact" className="px-6 pt-12 lg:px-12 lg:pt-[166px] ">
       <h2 className="text-center font-semibold tracking-wide text-primary-500">
         Contact us
       </h2>
