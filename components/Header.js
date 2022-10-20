@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { HOME, ABOUT, ACCOMMODATION, CONTACT } from "../constants/routes";
 
 const LINKS = [
@@ -30,9 +29,7 @@ const Header = () => {
       <header className="p-6 max-w-7xl flex items-center justify-center mx-auto">
         <div className="flex w-full justify-between items-center">
           <div className="uppercase text-[#0F172A] text-xl font-semibold">
-            <Link href={HOME}>
-              <a>Greenleafstudioapartments</a>
-            </Link>
+            <a href={HOME}>Greenleafstudioapartments</a>
           </div>
           <nav>
             <ul className="flex gap-x-12">
@@ -41,9 +38,7 @@ const Header = () => {
                   key={id}
                   className="text-gray-700 font-medium hover:text-gray-800 transition-color"
                 >
-                  <Link href={href}>
-                    <a>{label}</a>
-                  </Link>
+                  <a href={href}>{label}</a>
                 </li>
               ))}
             </ul>
