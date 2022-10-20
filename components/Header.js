@@ -31,7 +31,7 @@ const Header = () => {
           <div className="text-base font-semibold uppercase text-[#0F172A] md:text-xl">
             <a href={HOME}>Greenleafstudioapartments</a>
           </div>
-          <nav>
+          <nav className="hidden md:block">
             <ul className="flex gap-x-12">
               {LINKS.map(({ id, label, href }) => (
                 <li
