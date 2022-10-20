@@ -26,9 +26,9 @@ const LINKS = [
 const Header = () => {
   return (
     <div className="border-b border-gray-100">
-      <header className="p-6 max-w-7xl flex items-center justify-center mx-auto">
-        <div className="flex w-full justify-between items-center">
-          <div className="uppercase text-[#0F172A] text-xl font-semibold">
+      <header className="mx-auto flex max-w-7xl items-center justify-center p-6">
+        <div className="flex w-full items-center justify-between">
+          <div className="text-xl font-semibold uppercase text-[#0F172A]">
             <a href={HOME}>Greenleafstudioapartments</a>
           </div>
           <nav>
@@ -36,7 +36,7 @@ const Header = () => {
               {LINKS.map(({ id, label, href }) => (
                 <li
                   key={id}
-                  className="text-gray-700 font-medium hover:text-gray-800 transition-color"
+                  className="transition-color font-medium text-gray-700 hover:text-gray-800"
                 >
                   <a href={href}>{label}</a>
                 </li>
