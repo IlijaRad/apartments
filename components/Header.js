@@ -8,18 +8,18 @@ const LINKS = [
   },
   {
     id: 2,
-    label: "About us",
-    href: ABOUT,
-  },
-  {
-    id: 3,
     label: "Accommodation",
     href: ACCOMMODATION,
   },
   {
-    id: 4,
+    id: 3,
     label: "Contact us",
     href: CONTACT,
+  },
+  {
+    id: 4,
+    label: "About us",
+    href: ABOUT,
   },
 ];
 
