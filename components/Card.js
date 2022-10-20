@@ -10,36 +10,39 @@ const Card = ({
   imgSrc,
 }) => {
   return (
-    <div className="rounded-2xl border border-gray-200">
-      <Image className="rounded-t-2xl" height={420} src={imgSrc} />
-      <div className="px-9 py-7">
-        <h3 className="text-xl font-semibold text-gray-900 md:text-2xl">
+    <div className="border border-gray-200 lg:rounded-2xl">
+      <Image className="lg:rounded-t-2xl" height={420} src={imgSrc} />
+      <div className="px-9 py-5 lg:py-7">
+        <h3 className="text-lg font-semibold text-gray-900 lg:text-2xl">
           {title}
         </h3>
-        <div className="mt-8 text-sm font-semibold leading-5 text-gray-700">
+        <div className="mt-5 text-sm font-semibold text-gray-700 lg:mt-8 lg:leading-5">
           Short description
         </div>
-        <p className="mt-3.5 leading-7 text-gray-600">{description}</p>
-        <div className="mt-7 text-sm font-semibold text-gray-700">
+        <p className="mt-2 text-sm text-gray-600 lg:mt-3.5 lg:leading-7">
+          {description}
+        </p>
+        <div className="mt-5 text-sm font-semibold text-gray-700 lg:mt-7">
           Specifications
         </div>
-        <div className="mt-6">
+        <div className="mt-5 lg:mt-6">
           <div className="grid grid-cols-[70px_auto] text-gray-600">
             <div className="text-xs font-bold uppercase leading-5">Guests</div>
             <div className="text-sm font-medium">{guests}</div>
           </div>
-          <div className="mt-3.5 grid grid-cols-[70px_auto] text-gray-600">
+          <div className="mt-2 grid grid-cols-[70px_auto] text-gray-600 lg:mt-3.5">
             <div className="text-xs font-bold uppercase leading-5">View</div>
             <div className="text-sm font-medium">{view}</div>
           </div>
-          <div className="mt-3.5 grid grid-cols-[70px_auto] text-gray-600">
+          <div className="mt-2 grid grid-cols-[70px_auto] text-gray-600 lg:mt-3.5">
             <div className="text-xs font-bold uppercase leading-5">Size</div>
             <div className="text-sm font-medium">
-              (US) - {size.us} ft<sup>2</sup> (EU) - {size.eu} m<sup>2</sup>
+              (US) - {size.us} ft<sup>2</sup>&nbsp;&nbsp;&nbsp;(EU) - {size.eu}{" "}
+              m<sup>2</sup>
             </div>
           </div>
         </div>
-        <div className="mt-8 text-sm font-semibold text-gray-700">
+        <div className="mt-6 text-sm font-semibold text-gray-700 lg:mt-8">
           Hightlights
         </div>
         <div className="mt-3 flex flex-wrap gap-4">

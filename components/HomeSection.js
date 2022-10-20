@@ -12,7 +12,7 @@ const IMAGES = [
 
 const HomeSection = () => {
   return (
-    <div id="home" className="overflow-hidden pt-[110px]">
+    <div id="home" className="overflow-hidden pt-16 md:pt-[110px]">
       <div className="px-6 lg:px-12">
         <h1 className="mx-auto max-w-5xl text-center text-4xl font-semibold tracking-tight text-gray-900 md:text-5xl lg:text-7xl">
           Located at the perfect place for a perfect vacation
@@ -30,7 +30,7 @@ const HomeSection = () => {
       >
         Make a reservation now
       </a>
-      <div className="-mx-8 mt-[140px] flex justify-center gap-x-3 md:gap-x-5 lg:gap-x-[45px]">
+      <div className="-mx-8 mt-16 flex justify-center gap-x-3 md:mt-[140px] md:gap-x-5 lg:gap-x-[45px]">
         {IMAGES.map(({ id, src, alt, position }) => (
           <div
             key={id}
