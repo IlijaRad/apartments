@@ -18,7 +18,7 @@ const AboutSection = () => {
       <p className="mt-6 text-center leading-8 tracking-tight text-gray-600 lg:text-lg">
         A passion for making moments.
       </p>
-      <div className="mx-auto mt-9 max-w-2xl rounded-2xl border-gray-200 pb-16 text-center text-base leading-8 tracking-tight text-gray-600 md:text-lg lg:mt-16 lg:border lg:px-12 lg:pt-9">
+      <div className="mx-auto mt-9 max-w-2xl rounded-2xl border-gray-200 pb-16 text-center text-base leading-7 tracking-tight text-gray-600 md:text-lg md:leading-8 lg:mt-16 lg:border lg:px-12 lg:pt-9">
         Greenleafstudioapartments is a modern, upscale hospitality that is
         passionate about ‘making moments’, recognising that small gestures make
         a big difference to our guests, our owners and our people, offering
@@ -27,7 +27,7 @@ const AboutSection = () => {
         start.Set in Cavtat, 601 m from Rat Beach and 200 m from Cavtat
         Promenade, Greenleafstudioapartments offers accommodations with free
         WiFi, air conditioning and access to a garden.
-        <br /> <br /> <br />
+        <br /> <br />
         Cavtat is located between the magic city in Dubrovnik on one side and
         beautiful Konavle on the other. There one can still feel the spirit of
         the past time and experience the centuries old trandition of our

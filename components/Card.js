@@ -20,7 +20,7 @@ const Card = ({
         <div className="mt-5 text-sm font-semibold text-gray-700 lg:mt-8 lg:leading-5">
           Short description
         </div>
-        <p className="mt-2 text-sm text-gray-600 lg:mt-3.5 lg:leading-7">
+        <p className="mt-2 text-sm leading-7 text-gray-600 lg:mt-3.5">
           {description}
         </p>
         <div className="mt-5 text-sm font-semibold text-gray-700 lg:mt-7">
