@@ -2,6 +2,8 @@ import HomeSection from "../components/HomeSection";
 import AccommodationSection from "../components/AccommodationSection";
 import ContactSection from "../components/ContactSection";
 import Head from "next/head";
+import AboutSection from "../components/AboutSection";
+import FooterSection from "../components/FooterSection";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <HomeSection />
       <AccommodationSection />
       <ContactSection />
+      <AboutSection />
+      <FooterSection />
     </>
   );
 };
