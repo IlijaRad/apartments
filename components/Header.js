@@ -1,27 +1,5 @@
-import { HOME, ABOUT, ACCOMMODATION, CONTACT } from "../constants/routes";
-
-const LINKS = [
-  {
-    id: 1,
-    label: "Home",
-    href: HOME,
-  },
-  {
-    id: 2,
-    label: "Accommodation",
-    href: ACCOMMODATION,
-  },
-  {
-    id: 3,
-    label: "Contact us",
-    href: CONTACT,
-  },
-  {
-    id: 4,
-    label: "About us",
-    href: ABOUT,
-  },
-];
+import { HOME } from "../constants/routes";
+import { LINKS } from "../seed/navLinks";
 
 const Header = () => {
   return (

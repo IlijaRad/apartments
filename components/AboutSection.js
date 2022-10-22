@@ -1,40 +1,14 @@
 import { StarIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
+import { REVIEWS } from "../seed/reviews";
 
 const MAX_REVIEWS = 2;
-
-const REVIEWS = [
-  {
-    id: 1,
-    name: "Jack",
-    location: "United Kingdom",
-    rating: 5,
-    review:
-      "Unbelievable apartment. Very clean very modern, Elena was amazing and went above and beyond answering any questions and checking up on us during our stay. Will be recommending to everyone and definitely returning.",
-  },
-  {
-    id: 2,
-    name: "Danica",
-    location: "Serbia",
-    rating: 5,
-    review:
-      "We enjoyed everything here! The flat was beautiful and new, everything was clean, the location is central and close to everything, the hosts were super nice too! We would come back! Thank you!",
-  },
-  {
-    id: 3,
-    name: "Danica",
-    location: "Serbia",
-    rating: 5,
-    review:
-      "We enjoyed everything here! The flat was beautiful and new, everything was clean, the location is central and close to everything, the hosts were super nice too! We would come back! Thank you!",
-  },
-];
 
 const AboutSection = () => {
   const [reviewsShown, setReviewsShown] = useState(MAX_REVIEWS);
 
   return (
-    <div id="about" className="px-6 pt-12 lg:px-12 lg:pt-[166px] ">
+    <div id="about" className="px-6 pt-12 lg:px-12 lg:pt-[166px]">
       <h2 className="text-center font-semibold tracking-wide text-primary-500">
         About us
       </h2>
@@ -96,8 +70,8 @@ const AboutSection = () => {
               }
             >
               <div className="flex items-center justify-center gap-x-1">
-                {[...Array(rating).keys()].map(() => (
-                  <StarIcon className="h-5 w-5 text-primary-500" />
+                {[...Array(rating).keys()].map((_, ix) => (
+                  <StarIcon key={ix} className="h-5 w-5 text-primary-500" />
                 ))}
               </div>
               <div className="mt-4 text-center text-lg font-semibold tracking-tight text-gray-600">
