@@ -49,7 +49,10 @@ const AboutSection = () => {
         <StarIcon className="mt-1.5 h-8 w-8 text-primary-500" />
         <StarIcon className="mt-3 h-8 w-8 text-primary-500" />
       </div>
-      <h2 className="mt-[116px] text-center font-semibold tracking-wide text-primary-500">
+      <h2
+        id="testimonials"
+        className="pt-[116px] text-center font-semibold tracking-wide text-primary-500"
+      >
         About us
       </h2>
       <h3 className="mt-3.5 text-center text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl lg:text-5xl lg:leading-[52px]">

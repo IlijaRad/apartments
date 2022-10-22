@@ -14,10 +14,11 @@ export const APARTMENTS = [
     },
     highlights: ["Air Conditioner", "Private Parking", "Free Wi-Fi"],
     imgSrc: Img,
+    slug: "two-bedroom-apartment",
   },
   {
     id: 2,
-    title: "Two-Bedroom Apartment",
+    title: "Three-Bedroom Apartment",
     description:
       "Set in Cavtat, 80m from the nearest beach, 600 m from Rat Beach and 200 m from Cavtat Promenade, Tiffany Apartments offers accommodations with free WiFi, air conditioning and access to a garden.",
     guests: "4 + 1",
@@ -28,5 +29,6 @@ export const APARTMENTS = [
     },
     highlights: ["Air Conditioner", "Private Parking", "Free Wi-Fi"],
     imgSrc: Img,
+    slug: "three-bedroom-apartment",
   },
 ];
