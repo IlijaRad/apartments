@@ -27,6 +27,7 @@ const AccommodationSection = () => {
             title,
             view,
             imgSrc,
+            slug,
           }) => (
             <Card
               key={id}
@@ -37,6 +38,7 @@ const AccommodationSection = () => {
               title={title}
               view={view}
               imgSrc={imgSrc}
+              slug={slug}
             />
           )
         )}
