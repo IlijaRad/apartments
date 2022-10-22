@@ -6,7 +6,7 @@ export const APARTMENTS = [
     id: 1,
     title: "Green Olive Studio Apartment 1",
     description:
-      "Welcome to our brand new Studio apartment. This lovely little apartment will accommodate all travellers looking for a beautiful and quiet place to rest during their stay in Cavtat. It is serenaded by beautiful Olive and nature. Our building is with separate entrance, FREE parking in front, beautiful balcony with garden. The unit feature free WIFI, air conditioning, cable flat-screen TV, a fully equipped kitchen with a fridge and kettle.",
+      "Welcome to our brand new Studio apartment. This lovely little apartment will accommodate all travellers looking for a beautiful and quiet place to rest during their stay in Cavtat.",
     guests: "3 (1 bedroom, 3 beds, 1 bath)",
     view: "Garden",
     size: {
@@ -29,7 +29,7 @@ export const APARTMENTS = [
     id: 2,
     title: "Green Olive Studio Apartment 2",
     description:
-      "Welcome to our brand new Studio apartment. This lovely little apartment will accommodate all travellers looking for a beautiful and quiet place to rest during their stay in Cavtat. It is serenaded by beautiful Olive and nature. Our building is with separate entrance, beautiful balcony with garden and free parking. The unit feature free WIFI, air conditioning, cable flat-screen TV, a fully equipped kitchen with a fridge and kettle.",
+      "Welcome to our brand new Studio apartment. This lovely little apartment will accommodate all travellers looking for a beautiful and quiet place to rest during their stay in Cavtat.",
     guests: "3 (1 bedroom, 3 beds, 1 bath)",
     view: "Garden",
     size: {

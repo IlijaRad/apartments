@@ -12,8 +12,16 @@ const Card = ({
 }) => {
   return (
     <div id={slug} className="border border-gray-200 lg:rounded-2xl">
-      <Image className="lg:rounded-t-2xl" src={imgSrc} />
-      <div className="px-6 py-5 lg:px-9 lg:py-7">
+      <div className="relative h-[360px]">
+        <Image
+          className="lg:rounded-t-2xl"
+          src={imgSrc}
+          layout="fill"
+          objectPosition="center"
+          objectFit="cover"
+        />
+      </div>
+      <div className="shrink-0 px-6 py-5 lg:px-9 lg:py-7">
         <h3 className="text-lg font-semibold text-gray-900 lg:text-2xl">
           {title}
         </h3>

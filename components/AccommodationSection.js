@@ -16,7 +16,7 @@ const AccommodationSection = () => {
           guests
         </p>
       </div>
-      <div className="mt-8 grid gap-y-8 lg:mt-[112px] lg:grid-cols-2 lg:gap-x-6 lg:px-6">
+      <div className="mx-auto mt-8 grid max-w-[1360px] gap-y-8 lg:mt-[112px] lg:grid-cols-2 lg:gap-x-6 lg:px-6">
         {APARTMENTS.map(
           ({
             id,
