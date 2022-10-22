@@ -3,7 +3,7 @@ import { APARTMENTS } from "../seed/apartments";
 
 const FooterSection = () => {
   return (
-    <footer className="mt-[132px] border border-gray-200 bg-gray-50">
+    <footer className="mt-12 border border-gray-200 bg-gray-50 lg:mt-[132px]">
       <div className="mx-auto max-w-[1360px] px-8 pt-[72px] pb-[52px]">
         <div className="grid gap-12 sm:grid-cols-2 xl:grid-cols-[250px_auto_auto_auto]">
           <div className="flex flex-col gap-y-8">
@@ -89,7 +89,7 @@ const FooterSection = () => {
                 Contact Us
               </a>
               <a
-                href="#"
+                href="#location"
                 className="transition-color text-sm font-medium text-gray-500 hover:text-gray-600"
               >
                 Location
@@ -101,6 +101,17 @@ const FooterSection = () => {
                 Testimonials
               </a>
             </div>
+          </div>
+        </div>
+        <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-gray-200 pt-8">
+          <a
+            href="#"
+            className="font-semibold uppercase tracking-wider text-slate-900 md:text-xl lg:text-2xl"
+          >
+            Greenleafstudioapartments
+          </a>
+          <div className="text-sm font-medium text-gray-500">
+            Copyright &copy; 2022 Greenleafstudioapartments
           </div>
         </div>
       </div>

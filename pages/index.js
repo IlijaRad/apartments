@@ -4,6 +4,7 @@ import ContactSection from "../components/ContactSection";
 import Head from "next/head";
 import AboutSection from "../components/AboutSection";
 import FooterSection from "../components/FooterSection";
+import LocationSection from "../components/LocationSection";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HomeSection />
       <AccommodationSection />
       <ContactSection />
+      <LocationSection />
       <AboutSection />
       <FooterSection />
     </>

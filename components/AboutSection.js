@@ -15,10 +15,10 @@ const AboutSection = () => {
       <h3 className="mt-3.5 text-center text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl lg:text-5xl lg:leading-[52px]">
         A little bit about us
       </h3>
-      <p className="mt-6 text-center text-lg leading-8 tracking-tight text-gray-600">
+      <p className="mt-6 text-center leading-8 tracking-tight text-gray-600 lg:text-lg">
         A passion for making moments.
       </p>
-      <div className="mx-auto mt-16 max-w-2xl rounded-2xl border border-gray-200 px-12 pt-9 pb-16 text-center text-lg leading-8 tracking-tight text-gray-600">
+      <div className="mx-auto mt-9 max-w-2xl rounded-2xl border-gray-200 pb-16 text-center text-base leading-8 tracking-tight text-gray-600 md:text-lg lg:mt-16 lg:border lg:px-12 lg:pt-9">
         Greenleafstudioapartments is a modern, upscale hospitality that is
         passionate about ‘making moments’, recognising that small gestures make
         a big difference to our guests, our owners and our people, offering
@@ -41,7 +41,7 @@ const AboutSection = () => {
         sets Cavtat apart is its exclusivity to offer leisure and relaxation but
         with all the happenings of a city life.
       </div>
-      <div className="mx-auto mt-16 h-1 w-[112px] bg-primary-400"></div>
+      <div className="mx-auto h-1 w-[112px] bg-primary-400 lg:mt-16"></div>
       <div className="mt-14 flex items-center justify-center gap-x-2">
         <StarIcon className="mt-3 h-8 w-8 text-primary-500" />
         <StarIcon className="mt-1.5 h-8 w-8 text-primary-500" />
@@ -51,25 +51,25 @@ const AboutSection = () => {
       </div>
       <h2
         id="testimonials"
-        className="pt-[116px] text-center font-semibold tracking-wide text-primary-500"
+        className="pt-6 text-center font-semibold tracking-wide text-primary-500 lg:pt-[116px]"
       >
         About us
       </h2>
       <h3 className="mt-3.5 text-center text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl lg:text-5xl lg:leading-[52px]">
         What our clients say about us
       </h3>
-      <p className="mt-6 text-center text-lg leading-8 tracking-tight text-gray-600">
+      <p className="mt-6 text-center leading-8 tracking-tight text-gray-600 lg:text-lg">
         Reviews are coming from clients all around the world.
       </p>
-      <div className="mx-auto mt-[72px] flex max-w-3xl flex-col gap-y-6">
+      <div className="mx-auto mt-6 flex max-w-3xl flex-col gap-y-6 lg:mt-[72px]">
         {REVIEWS.slice(0, reviewsShown).map(
           ({ id, name, location, rating, review }) => (
             <div
               key={id}
               className={
                 id === reviewsShown && REVIEWS.length > reviewsShown
-                  ? "faded relative rounded-2xl border border-gray-200 py-10 px-11"
-                  : "relative rounded-2xl border border-gray-200 py-10 px-11"
+                  ? "faded relative rounded-2xl border-gray-200 py-10 lg:border lg:px-11"
+                  : "relative rounded-2xl border-gray-200 py-10 lg:border lg:px-11"
               }
             >
               <div className="flex items-center justify-center gap-x-1">

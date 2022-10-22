@@ -1,13 +1,17 @@
 import Image from "next/image";
 import { CONTACT } from "../constants/routes";
-import Img1 from "../public/img/1.png";
+import Img1 from "../public/img/home/6.jpg";
+import Img2 from "../public/img/home/1.jpg";
+import Img3 from "../public/img/home/2.jpg";
+import Img4 from "../public/img/home/5.jpg";
+import Img5 from "../public/img/home/3.jpg";
 
 const IMAGES = [
   { id: 1, src: Img1, alt: "", position: "UP" },
-  { id: 2, src: Img1, alt: "", position: "DOWN" },
-  { id: 3, src: Img1, alt: "", position: "UP" },
-  { id: 4, src: Img1, alt: "", position: "DOWN" },
-  { id: 5, src: Img1, alt: "", position: "UP" },
+  { id: 2, src: Img2, alt: "", position: "DOWN" },
+  { id: 3, src: Img3, alt: "", position: "UP" },
+  { id: 4, src: Img4, alt: "", position: "DOWN" },
+  { id: 5, src: Img5, alt: "", position: "UP" },
 ];
 
 const HomeSection = () => {
@@ -18,8 +22,8 @@ const HomeSection = () => {
           Located at the perfect place for a perfect vacation
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-center text-base text-gray-600 lg:text-lg">
-          A modern, upscale hospitality that is passionate about &apos;making
-          moments&apos;, recognizing that small gestures make a big difference
+          A modern, upscale hospitality that is passionate about &quot;making
+          moments&quot;, recognizing that small gestures make a big difference
           to our guests, our owners and our people, offering unforgettable
           experiences.
         </p>
@@ -30,17 +34,21 @@ const HomeSection = () => {
       >
         Make a reservation now
       </a>
-      <div className="-mx-8 mt-16 flex justify-center gap-x-3 md:mt-[140px] md:gap-x-5 lg:gap-x-[45px]">
+      <div className="-mx-8 mt-16 flex justify-center gap-x-3 md:mt-[140px] md:gap-x-4 xl:gap-x-10">
         {IMAGES.map(({ id, src, alt, position }) => (
           <div
             key={id}
             className={
-              position === "DOWN"
-                ? "mt-[64px] flex items-end"
-                : "flex items-start"
+              position === "DOWN" ? "mt-16 flex items-end" : "flex items-start"
             }
           >
-            <Image src={src} alt={alt} width={360} height={542} />
+            <Image
+              className="rounded-md"
+              src={src}
+              alt={alt}
+              width={360}
+              height={542}
+            />
           </div>
         ))}
       </div>
