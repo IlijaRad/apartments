@@ -44,7 +44,7 @@ const Card = ({
           </div>
         </div>
         <div className="mt-6 text-sm font-semibold text-gray-700 lg:mt-8">
-          Hightlights
+          Highlights
         </div>
         <div className="mt-3 flex flex-wrap gap-4">
           {highlights.map((highlight, ix) => (
