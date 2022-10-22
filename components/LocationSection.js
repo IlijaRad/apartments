@@ -78,10 +78,10 @@ const LocationIcon = () => (
 const LocationSection = () => {
   return (
     <div id="location" className="pt-[75px]">
-      <h4 className="text-center text-[32px] font-semibold leading-10 tracking-tight text-gray-900">
+      <h4 className="text-center text-2xl font-semibold leading-10 tracking-tight text-gray-900 lg:text-[32px]">
         Where are we located?
       </h4>
-      <div className="mx-auto mt-20 w-fit">
+      <div className="mx-auto mt-10 w-fit lg:mt-20">
         <LocationIcon />
       </div>
       <p className="mx-auto mt-8 max-w-xs text-center font-medium tracking-tight text-gray-700">

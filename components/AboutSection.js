@@ -61,15 +61,15 @@ const AboutSection = () => {
       <p className="mt-6 text-center leading-8 tracking-tight text-gray-600 lg:text-lg">
         Reviews are coming from clients all around the world.
       </p>
-      <div className="mx-auto mt-6 flex max-w-3xl flex-col gap-y-6 lg:mt-[72px]">
+      <div className="mx-auto mt-6 flex max-w-3xl flex-col gap-y-3 lg:mt-[72px] lg:gap-y-6">
         {REVIEWS.slice(0, reviewsShown).map(
           ({ id, name, location, rating, review }) => (
             <div
               key={id}
               className={
                 id === reviewsShown && REVIEWS.length > reviewsShown
-                  ? "faded relative rounded-2xl border-gray-200 py-10 lg:border lg:px-11"
-                  : "relative rounded-2xl border-gray-200 py-10 lg:border lg:px-11"
+                  ? "faded relative rounded-2xl border-gray-200 py-5 lg:border lg:py-10 lg:px-11"
+                  : "relative rounded-2xl border-gray-200 py-5 lg:border lg:py-10 lg:px-11"
               }
             >
               <div className="flex items-center justify-center gap-x-1">
