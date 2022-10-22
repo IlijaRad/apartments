@@ -89,7 +89,7 @@ const AboutSection = () => {
         {REVIEWS.length > reviewsShown ? (
           <button
             onClick={() => setReviewsShown((reviewsShown) => reviewsShown + 2)}
-            className="mx-auto mt-6 w-fit rounded-lg border border-gray-200 py-3 px-7 text-sm tracking-tight text-gray-700"
+            className="mx-auto mt-6 w-fit rounded-lg border border-gray-200 py-3 px-7 text-sm font-semibold tracking-tight text-gray-700"
           >
             Show more
           </button>
