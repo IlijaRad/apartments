@@ -4,7 +4,7 @@ import ContactSection from "../components/ContactSection";
 import Head from "next/head";
 import AboutSection from "../components/AboutSection";
 import FooterSection from "../components/FooterSection";
-import LocationSection from "../components/LocationSection";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
@@ -12,6 +12,7 @@ const Home = () => {
       <Head>
         <title>Green Leaf Studio Apartments</title>
       </Head>
+      <Header />
       <HomeSection />
       <AccommodationSection />
       <ContactSection />
