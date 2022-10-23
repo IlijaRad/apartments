@@ -19,7 +19,10 @@ const Header = () => {
         <header className="mx-auto flex max-w-7xl items-center justify-center px-6 py-4 md:pt-7 md:pb-[27px]">
           <div className="flex w-full items-center justify-between gap-x-6">
             <div className="text-sm font-semibold uppercase text-slate-900 md:text-base md:tracking-wide lg:text-xl lg:tracking-wider">
-              <a href={HOME} className="block h-6 w-[300px]">
+              <a
+                href={HOME}
+                className="block h-5 w-[250px] md:h-6 md:w-[300px]"
+              >
                 <Logo />
               </a>
             </div>
