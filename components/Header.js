@@ -11,11 +11,11 @@ const Header = () => {
     <div
       className={
         !isOpenMenu
-          ? "max-h-[72px] transition-all"
+          ? "max-h-[72px] overflow-hidden transition-all"
           : "max-h-[274px] transition-all"
       }
     >
-      <div className="overflow-hidden border-b border-gray-100">
+      <div className="border-b border-gray-100">
         <header className="mx-auto flex max-w-7xl items-center justify-center px-6 py-3 md:p-6">
           <div className="flex w-full items-center justify-between gap-x-6">
             <div className="text-sm font-semibold uppercase text-slate-900 md:text-base md:tracking-wide lg:text-xl lg:tracking-wider">
