@@ -35,7 +35,7 @@ const Header = () => {
             </nav>
             <button
               onClick={() => setIsOpenMenu((isOpenMenu) => !isOpenMenu)}
-              className="rounded-full p-2.5 text-gray-600 transition-all hover:bg-gray-100 focus:text-primary-400 focus:outline-none md:hidden"
+              className="rounded-full p-2.5 text-gray-600 transition-all focus:text-primary-400 focus:outline-none md:hidden"
             >
               <Bars3Icon
                 className={isOpenMenu ? "hidden" : "h-7 w-7 text-gray-600"}
