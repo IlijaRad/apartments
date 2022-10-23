@@ -3,9 +3,9 @@ import { APARTMENTS } from "../seed/apartments";
 
 const FooterSection = () => {
   return (
-    <footer className="mt-12 border border-gray-200 bg-gray-50 lg:mt-[132px]">
+    <footer className="lg:mt-[132px] mt-12 border border-gray-200 bg-gray-50">
       <div className="mx-auto max-w-[1360px] px-8 pt-[72px] pb-[52px]">
-        <div className="grid gap-12 sm:grid-cols-2 xl:grid-cols-[250px_auto_auto_auto]">
+        <div className="sm:grid-cols-2 xl:grid-cols-[250px_auto_auto_auto] grid gap-12">
           <div className="flex flex-col gap-y-8">
             <div className="text-sm font-semibold text-gray-700">
               Social Media
@@ -106,12 +106,13 @@ const FooterSection = () => {
         <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-gray-200 pt-8">
           <a
             href="#"
-            className="font-semibold uppercase tracking-wider text-slate-900 md:text-xl lg:text-2xl"
+            className="md:text-xl lg:text-2xl font-semibold uppercase tracking-wider text-slate-900"
           >
             Greenleafstudioapartments
           </a>
           <div className="text-sm font-medium text-gray-500">
-            Copyright &copy; 2022 Greenleafstudioapartments
+            Copyright &copy; 2022{" "}
+            <span className="hidden xs:inline">Greenleafstudioapartments</span>
           </div>
         </div>
       </div>
