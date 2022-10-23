@@ -29,7 +29,6 @@ const HomeSection = () => {
     else setDisplayCount(5);
   }, [smallScreen]);
 
-  console.log(smallScreen);
   return (
     <div id="home" className="overflow-hidden pt-12 md:pt-[110px]">
       <div className="px-6 lg:px-12">

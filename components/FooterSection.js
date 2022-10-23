@@ -1,5 +1,6 @@
-import { ABOUT, ACCOMMODATION, CONTACT } from "../constants/routes";
+import { ABOUT, ACCOMMODATION, CONTACT, HOME } from "../constants/routes";
 import { APARTMENTS } from "../seed/apartments";
+import Logo from "../public/logo.svg";
 
 const FooterSection = () => {
   return (
@@ -104,11 +105,8 @@ const FooterSection = () => {
           </div>
         </div>
         <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-gray-200 pt-8">
-          <a
-            href="#"
-            className="font-semibold uppercase tracking-wider text-slate-900 md:text-xl lg:text-2xl"
-          >
-            Greenleafstudioapartments
+          <a href={HOME} className="block flex h-8 w-[300px]">
+            <Logo />
           </a>
           <div className="text-sm font-medium text-gray-500">
             Copyright &copy; 2022{" "}
