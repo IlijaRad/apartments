@@ -40,7 +40,7 @@ const FooterSection = () => {
               <div className="text-sm font-medium text-gray-700">Email</div>
               <a
                 href="mailto: contact@greenleafstudioapartments.com"
-                className="w-fit overflow-hidden break-words text-sm font-medium text-gray-500 transition-colors hover:text-gray-600"
+                className="w-fit overflow-hidden text-ellipsis break-all text-sm font-medium text-gray-500 transition-colors hover:text-gray-600"
               >
                 contact@greenleafstudioapartments.com
               </a>
