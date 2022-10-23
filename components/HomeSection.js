@@ -34,7 +34,7 @@ const HomeSection = () => {
       >
         Make a reservation now
       </a>
-      <div className="-mx-8 mt-16 flex justify-center gap-x-3 md:mt-[140px] md:gap-x-4 xl:gap-x-10">
+      <div className="-mx-4 mt-16 flex justify-center gap-x-2 md:-mx-8 md:mt-[140px] md:gap-x-4 xl:gap-x-10">
         {IMAGES.map(({ id, src, alt, position }) => (
           <div
             key={id}

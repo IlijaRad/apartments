@@ -11,7 +11,10 @@ const Card = ({
   slug,
 }) => {
   return (
-    <div id={slug} className="border border-gray-200 lg:rounded-2xl">
+    <div
+      id={slug}
+      className="border-t border-b border-gray-200 lg:rounded-2xl lg:border"
+    >
       <div className="relative h-[360px]">
         <Image
           className="lg:rounded-t-2xl"
