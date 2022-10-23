@@ -19,7 +19,7 @@ const FooterSection = () => {
               </a>
               <a
                 href="#"
-                className="transition-color text-gray-5 w-fit text-sm font-medium hover:text-gray-600"
+                className="transition-color w-fit text-sm font-medium text-gray-500 hover:text-gray-600"
               >
                 Instagram
               </a>
