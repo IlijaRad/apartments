@@ -5,6 +5,7 @@ import Img2 from "../public/img/home/1.jpg";
 import Img3 from "../public/img/home/2.jpg";
 import Img4 from "../public/img/home/5.jpg";
 import Img5 from "../public/img/home/3.jpg";
+import { useEffect, useState } from "react";
 
 const IMAGES = [
   { id: 1, src: Img1, alt: "", position: "UP" },
@@ -15,6 +16,20 @@ const IMAGES = [
 ];
 
 const HomeSection = () => {
+  const [smallScreen, setSmallScreen] = useState(false);
+  const [displayCount, setDisplayCount] = useState(5);
+  useEffect(() => {
+    setSmallScreen(window.matchMedia("(max-width: 768px)").matches);
+    const handler = (e) => setSmallScreen(e.matches);
+    window.matchMedia("(max-width: 768px)").addEventListener("change", handler);
+  }, []);
+
+  useEffect(() => {
+    if (smallScreen) setDisplayCount(3);
+    else setDisplayCount(5);
+  }, [smallScreen]);
+
+  console.log(smallScreen);
   return (
     <div id="home" className="overflow-hidden pt-12 md:pt-[110px]">
       <div className="px-6 lg:px-12">
@@ -34,12 +49,14 @@ const HomeSection = () => {
       >
         Make a reservation now
       </a>
-      <div className="-mx-4 mt-16 flex justify-center gap-x-2 md:-mx-8 md:mt-[140px] md:gap-x-4 xl:gap-x-10">
-        {IMAGES.map(({ id, src, alt, position }) => (
+      <div className="-mx-4 mt-16 flex justify-center gap-x-0.5 md:-mx-8 md:mt-[140px] md:gap-x-2 lg:gap-x-4 xl:gap-x-10">
+        {IMAGES.slice(0, displayCount).map(({ id, src, alt, position }) => (
           <div
             key={id}
             className={
-              position === "DOWN" ? "mt-16 flex items-end" : "flex items-start"
+              position === "DOWN"
+                ? "mt-8 flex items-end md:mt-16"
+                : "flex items-start"
             }
           >
             <Image
