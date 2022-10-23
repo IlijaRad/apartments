@@ -31,7 +31,7 @@ const Header = () => {
                 {LINKS.map(({ id, label, href }) => (
                   <li
                     key={id}
-                    className="transition-color  text-gray-700 hover:text-gray-800 lg:text-base lg:font-medium"
+                    className="transition-color text-gray-700 hover:text-gray-800 lg:text-base lg:font-medium"
                   >
                     <a href={href} className="block">
                       {label}
