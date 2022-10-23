@@ -105,11 +105,11 @@ const FooterSection = () => {
           </div>
         </div>
         <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-gray-200 pt-8">
-          <a href={HOME} className="block flex h-8 w-[300px]">
+          <a href={HOME} className="flex h-8 w-[300px]">
             <Logo />
           </a>
           <div className="text-sm font-medium text-gray-500">
-            Copyright &copy; 2022{" "}
+            Copyright &copy; {new Date().getFullYear()}{" "}
             <span className="hidden xs:inline">Greenleafstudioapartments</span>
           </div>
         </div>
