@@ -45,7 +45,7 @@ const FooterSection = () => {
             <div className="flex flex-col gap-y-3">
               <div className="text-sm font-medium text-gray-700">Email</div>
               <a
-                href="mailto: vacation-rental@outlook.com"
+                href="mailto:vacation-rental@outlook.com"
                 className="w-fit overflow-hidden text-ellipsis break-all text-sm font-medium text-gray-500 transition-colors hover:text-gray-600"
               >
                 vacation-rental@outlook.com
@@ -53,9 +53,12 @@ const FooterSection = () => {
               <div className="mt-3 text-sm font-medium text-gray-700">
                 Phone
               </div>
-              <div className="text-sm font-medium text-gray-500">
+              <a
+                href="tel:+385916117498"
+                className="text-sm font-medium text-gray-500"
+              >
                 +385916117498
-              </div>
+              </a>
             </div>
           </div>
           <div className="flex flex-col gap-y-8">

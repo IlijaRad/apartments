@@ -21,7 +21,7 @@ const Header = () => {
             <div className="text-sm font-semibold uppercase text-slate-900 md:text-base md:tracking-wide lg:text-xl lg:tracking-wider">
               <a
                 href={HOME}
-                className="block h-5 w-[250px] md:h-6 md:w-[300px]"
+                className="block h-5 w-[250px] lg:h-6 lg:w-[300px]"
               >
                 <Logo />
               </a>
@@ -31,7 +31,7 @@ const Header = () => {
                 {LINKS.map(({ id, label, href }) => (
                   <li
                     key={id}
-                    className="transition-color text-gray-700 hover:text-gray-800 lg:text-base lg:font-medium"
+                    className="transition-color text-sm leading-6 text-gray-700 hover:text-gray-800 lg:text-base lg:font-medium"
                   >
                     <a href={href} className="block">
                       {label}
