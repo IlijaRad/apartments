@@ -55,7 +55,7 @@ const FooterSection = () => {
               </div>
               <a
                 href="tel:+385916117498"
-                className="text-sm font-medium text-gray-500"
+                className="w-fit text-sm font-medium text-gray-500 transition-colors hover:text-gray-600"
               >
                 +385916117498
               </a>
