@@ -8,7 +8,7 @@ const AboutSection = () => {
   const [reviewsShown, setReviewsShown] = useState(MAX_REVIEWS);
 
   return (
-    <div id="about" className="px-6 pt-12 lg:px-12 lg:pt-[166px]">
+    <div id="about" className="px-6 pt-20 lg:px-12 lg:pt-[166px]">
       <h2 className="text-center font-semibold tracking-wide text-primary-500">
         About us
       </h2>

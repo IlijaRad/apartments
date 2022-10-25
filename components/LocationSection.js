@@ -2,7 +2,10 @@ import LocationIcon from "../public/location.svg";
 
 const LocationSection = () => {
   return (
-    <div id="location" className="border-gray-200 md:border md:py-12">
+    <div
+      id="location"
+      className="mx-auto border-gray-200 md:border md:px-6 md:py-12"
+    >
       <h4 className="text-center text-2xl font-semibold leading-10 tracking-tight text-gray-900 lg:text-[32px]">
         Where are we located?
       </h4>

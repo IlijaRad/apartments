@@ -13,22 +13,28 @@ const FooterSection = () => {
             </div>
             <div className="flex flex-col gap-y-4">
               <a
-                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/profile.php?id=100070729604791"
                 className="transition-color w-fit text-sm font-medium text-gray-500 hover:text-gray-600"
               >
                 Facebook
               </a>
               <a
-                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/greenolive.apartments/"
                 className="transition-color w-fit text-sm font-medium text-gray-500 hover:text-gray-600"
               >
                 Instagram
               </a>
               <a
-                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.google.com/maps/place/Green+Olive+Apartments+-+Cavtat/@42.579888,18.2275215,15z/data=!4m5!3m4!1s0x0:0xe763bf028a31ee8b!8m2!3d42.579888!4d18.2275215"
                 className="transition-color w-fit text-sm font-medium text-gray-500 hover:text-gray-600"
               >
-                Twitter
+                Google
               </a>
             </div>
           </div>
@@ -39,16 +45,16 @@ const FooterSection = () => {
             <div className="flex flex-col gap-y-3">
               <div className="text-sm font-medium text-gray-700">Email</div>
               <a
-                href="mailto: contact@greenleafstudioapartments.com"
+                href="mailto: vacation-rental@outlook.com"
                 className="w-fit overflow-hidden text-ellipsis break-all text-sm font-medium text-gray-500 transition-colors hover:text-gray-600"
               >
-                contact@greenleafstudioapartments.com
+                vacation-rental@outlook.com
               </a>
               <div className="mt-3 text-sm font-medium text-gray-700">
                 Phone
               </div>
               <div className="text-sm font-medium text-gray-500">
-                +38X XXX XXX
+                +385916117498
               </div>
             </div>
           </div>

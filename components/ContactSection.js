@@ -9,22 +9,20 @@ const ContactSection = () => {
       <h3 className="mt-3.5 text-center text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl lg:text-5xl lg:leading-[52px]">
         Get in contact with us
       </h3>
-      <div className="mx-auto grid max-w-lg gap-8 pt-14 md:max-w-4xl md:grid-cols-2 md:pt-20">
+      <div className="mx-auto grid max-w-lg gap-x-8 gap-y-12 pt-14 md:max-w-4xl md:grid-cols-2 md:pt-20">
         <LocationSection />
-        <div className="border-gray-200 py-6 md:border md:py-12">
+        <div className="mx-auto border-gray-200 md:border md:px-6 md:py-12">
           <h4 className="text-center text-2xl font-semibold leading-10 tracking-tight text-gray-900 lg:text-[32px]">
             How to contact us?
           </h4>
-          <div className="mx-auto grid max-w-[240px] grid-cols-[90px_1fr] items-center justify-center pt-10 md:pt-20">
-            <div className="text-lg font-medium text-gray-900">Phone:</div>
-            <span className="text-base font-normal text-gray-700">
-              XXX XXX XXX
-            </span>
+          <div className="grid grid-cols-[58px_minmax(210px,1fr)] items-center justify-center pt-10 text-sm md:grid-cols-[65px_minmax(240px,1fr)] md:pt-20 md:text-base">
+            <div className="font-medium text-gray-900">Phone:</div>
+            <span className="font-normal text-gray-700">+385916117498</span>
           </div>
-          <div className="mx-auto grid max-w-[240px] grid-cols-[90px_1fr] justify-center pt-4">
-            <div className="text-lg font-medium text-gray-900">Email:</div>
-            <span className="text-base font-normal text-gray-700">
-              email@mail.com
+          <div className="grid grid-cols-[58px_minmax(210px,1fr)] items-center justify-center pt-4 text-sm md:grid-cols-[65px_minmax(240px,1fr)] md:text-base">
+            <div className="font-medium text-gray-900">Email:</div>
+            <span className="font-normal text-gray-700">
+              vacation-rental@outlook.com
             </span>
           </div>
         </div>
