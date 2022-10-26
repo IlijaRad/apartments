@@ -21,7 +21,8 @@ const HomeSection = () => {
   useEffect(() => {
     setSmallScreen(window.matchMedia("(max-width: 768px)").matches);
     const handler = (e) => setSmallScreen(e.matches);
-    window.matchMedia("(max-width: 768px)").addEventListener("change", handler);
+    if (window.matchMedia("(max-width: 768px)"))
+      document.addEventListener("change", handler);
   }, []);
 
   useEffect(() => {
