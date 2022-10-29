@@ -65,7 +65,6 @@ const Header = () => {
           <a
             key={id}
             href={href}
-            onClick={() => setIsOpenMenu((isOpenMenu) => !isOpenMenu)}
             className="transition-color block cursor-pointer border-b border-gray-100 px-6 py-4 text-sm font-medium text-slate-900"
           >
             {label}
