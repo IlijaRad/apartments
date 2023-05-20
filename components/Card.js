@@ -13,15 +13,13 @@ const Card = ({
   return (
     <div
       id={slug}
-      className="border-t border-b border-gray-200 lg:rounded-2xl lg:border"
+      className="border-b border-t border-gray-200 lg:rounded-2xl lg:border"
     >
       <div className="relative h-[360px]">
         <Image
-          className="lg:rounded-t-2xl"
+          className="object-cover lg:rounded-t-2xl"
           src={imgSrc}
-          layout="fill"
-          objectPosition="center"
-          objectFit="cover"
+          fill={true}
         />
       </div>
       <div className="shrink-0 px-6 py-5 lg:px-9 lg:py-7">
@@ -61,7 +59,7 @@ const Card = ({
           {highlights.map((highlight, ix) => (
             <div
               key={ix}
-              className="rounded-md border border-gray-200 py-1.5 px-4 text-sm font-medium text-gray-700"
+              className="rounded-md border border-gray-200 px-4 py-1.5 text-sm font-medium text-gray-700"
             >
               <span># </span>
               {highlight}
