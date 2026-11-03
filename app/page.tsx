@@ -31,7 +31,7 @@ export default function HomePage() {
           <p className="mx-auto mt-6 max-w-3xl text-center text-base text-gray-600 lg:text-lg">Stay in a welcoming garden-view studio, just 200 m from Cavtat Promenade and 7 km from Dubrovnik Airport.</p>
         </div>
         <a href="#contact" className="mx-auto mt-6 block w-fit rounded-lg border border-gray-200 px-6 py-2.5 text-sm font-semibold tracking-tight text-gray-700 md:px-7 md:text-base lg:mt-10 lg:text-lg">Make a reservation now</a>
-        <div className="-mx-4 mt-16 flex justify-center gap-x-0.5 md:-mx-8 md:mt-[140px] md:gap-x-2 lg:gap-x-4 xl:gap-x-10">{photos.map(([src, alt], index) => <div key={src} className={`${index % 2 ? "mt-8 flex min-w-0 items-end md:mt-16" : "flex min-w-0 items-start"} ${index > 2 ? "hidden md:flex" : ""}`}><Image src={src} alt={alt} width={360} height={542} sizes="(max-width: 768px) 33vw, 25vw" priority={index < 2} style={{ width: "100%", height: "auto" }} className="h-auto w-full rounded-md" /></div>)}</div>
+        <div className="-mx-4 mt-16 flex justify-center gap-x-0.5 md:-mx-8 md:mt-[140px] md:gap-x-2 lg:gap-x-4 xl:gap-x-10">{photos.map(([src, alt], index) => <div key={src} className={`${index % 2 ? "mt-8 flex min-w-0 items-end md:mt-16" : "flex min-w-0 items-start"} ${index > 2 ? "hidden md:flex" : ""}`}><Image src={src} alt={alt} width={360} height={480} sizes="(max-width: 768px) 33vw, 25vw" loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : "auto"} style={{ width: "100%", height: "auto" }} className="h-auto w-full rounded-md" /></div>)}</div>
       </section>
       <section id="accommodation" className="pt-16 lg:pt-[140px]">
         <div className="px-6 lg:px-12">
