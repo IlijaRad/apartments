@@ -18,23 +18,23 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="px-6 pt-20 lg:px-12 lg:pt-[166px]">
-      <h2 className="text-center font-semibold tracking-wide text-primary-500">About us</h2>
+      <h2 className="text-center font-semibold tracking-wide text-primary-700">About us</h2>
       <h3 className="mt-3.5 text-center text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl lg:text-5xl lg:leading-[52px]">A little bit about us</h3>
       <p className="mt-6 text-center leading-8 tracking-tight text-gray-600 lg:text-lg">Two welcoming studios in Cavtat, close to the sea and Dubrovnik.</p>
       <div className="mx-auto mt-9 max-w-2xl rounded-2xl border-gray-200 pb-16 text-center text-base leading-7 tracking-tight text-gray-600 md:text-lg md:leading-8 lg:mt-16 lg:border lg:px-12 lg:pt-9">
         Our garden-view studios are set in Cavtat, just 200 m from the promenade. The town lies between Dubrovnik and Konavle, with quiet coves, seaside walks and a relaxed coastal atmosphere. Dubrovnik Airport is 7 km away, and the UNESCO-protected Old Town of Dubrovnik is about 20 km away.
       </div>
       <div className="mx-auto h-1 w-[112px] bg-primary-400 lg:mt-16" />
-      <div className="mt-14 flex items-center justify-center gap-x-2" aria-label="Five star reviews">
+      <div role="img" aria-label="Five star reviews" className="mt-14 flex items-center justify-center gap-x-2">
         <Star className="mt-3 h-8 w-8 text-primary-500" /><Star className="mt-1.5 h-8 w-8 text-primary-500" /><Star className="h-8 w-8 text-primary-500" /><Star className="mt-1.5 h-8 w-8 text-primary-500" /><Star className="mt-3 h-8 w-8 text-primary-500" />
       </div>
-      <h2 id="testimonials" className="pt-6 text-center font-semibold tracking-wide text-primary-500 lg:pt-[116px]">Testimonials</h2>
+      <h2 id="testimonials" className="pt-6 text-center font-semibold tracking-wide text-primary-700 lg:pt-[116px]">Testimonials</h2>
       <h3 className="mt-3.5 text-center text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl lg:text-5xl lg:leading-[52px]">What our clients say about us</h3>
       <p className="mt-6 text-center leading-8 tracking-tight text-gray-600 lg:text-lg">Reviews are coming from clients all around the world.</p>
       <div className="mx-auto mt-6 flex max-w-3xl flex-col gap-y-3 lg:mt-[72px] lg:gap-y-6">
         {reviews.slice(0, reviewsShown).map((review, index) => (
           <article key={review.id} className={`${index === reviewsShown - 1 && reviews.length > reviewsShown ? "faded " : ""}relative rounded-2xl border-gray-200 py-5 lg:border lg:px-11 lg:py-10`}>
-            <div className="flex items-center justify-center gap-x-1 text-primary-500" aria-label={`${review.rating} out of 5 stars`}>{Array.from({ length: review.rating }, (_, star) => <Star key={star} />)}</div>
+            <div role="img" aria-label={`${review.rating} out of 5 stars`} className="flex items-center justify-center gap-x-1 text-primary-500">{Array.from({ length: review.rating }, (_, star) => <Star key={star} />)}</div>
             <div className="mt-4 text-center text-lg font-semibold tracking-tight text-gray-600">{review.name} ({review.location})</div>
             <p className="mt-4 text-center leading-7 tracking-tight text-gray-600">{review.review}</p>
           </article>

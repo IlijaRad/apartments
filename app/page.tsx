@@ -18,7 +18,7 @@ const photos = [
 ];
 
 function SectionHeading({ eyebrow, title, children }: { eyebrow: string; title: string; children?: React.ReactNode }) {
-  return <div className="mx-auto max-w-2xl text-center"><p className="font-semibold tracking-wide text-primary-500">{eyebrow}</p><h2 className="mt-3.5 text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl lg:text-5xl lg:leading-[52px]">{title}</h2>{children && <p className="mt-6 leading-8 tracking-tight text-gray-600 lg:text-lg">{children}</p>}</div>;
+  return <div className="mx-auto max-w-2xl text-center"><p className="font-semibold tracking-wide text-primary-700">{eyebrow}</p><h2 className="mt-3.5 text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl lg:text-5xl lg:leading-[52px]">{title}</h2>{children && <p className="mt-6 leading-8 tracking-tight text-gray-600 lg:text-lg">{children}</p>}</div>;
 }
 
 export default function HomePage() {
@@ -35,7 +35,7 @@ export default function HomePage() {
       </section>
       <section id="accommodation" className="pt-16 lg:pt-[140px]">
         <div className="px-6 lg:px-12">
-          <h2 className="text-center font-semibold tracking-wide text-primary-500">Accommodation</h2>
+          <h2 className="text-center font-semibold tracking-wide text-primary-700">Accommodation</h2>
           <h3 className="mt-4 text-center text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl lg:mt-3.5 lg:text-5xl lg:leading-[52px]">Pick a place that fits you</h3>
           <p className="mt-6 text-center text-base tracking-tight text-gray-600 lg:text-lg lg:leading-8">Choose from two comfortable studios, each with garden views.</p>
         </div>
