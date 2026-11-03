@@ -20,7 +20,7 @@ export default function Header() {
         <header className="mx-auto flex max-w-7xl items-center justify-center px-6 py-4 md:pt-7 md:pb-[27px]">
           <div className="flex w-full items-center justify-between gap-x-6">
             <Link href="#home" aria-label="Green Leaf Studio Apartments home" className="block h-5 w-[250px] shrink-0 max-[345px]:w-[calc(100vw-7.5rem)] lg:h-6 lg:w-[300px]">
-              <Image src="/logo.svg" alt="Green Olive" width={300} height={25} priority style={{ height: "auto" }} className="w-[250px] object-fill max-[345px]:w-[calc(100vw-7.5rem)] lg:w-[300px]" />
+              <Image src="/logo.svg" alt="Green Olive" width={300} height={25} loading="eager" style={{ height: "auto" }} className="w-[250px] object-fill max-[345px]:w-[calc(100vw-7.5rem)] lg:w-[300px]" />
             </Link>
             <nav aria-label="Main navigation" className="hidden md:block">
               <ul className="flex gap-x-4 lg:gap-x-12">
